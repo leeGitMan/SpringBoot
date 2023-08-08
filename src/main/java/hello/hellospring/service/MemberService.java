@@ -8,8 +8,12 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-
+    // command + shif + T 테스트 케이스 간편하게 작성
     private final MemberRepository memberRepository =  new MemoryMemberRepository();
+
+    public MemberService(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
 
     /*
     * 회원 가입
