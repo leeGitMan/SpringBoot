@@ -20,7 +20,7 @@ class MemberServiceInteTest {
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
 
-    
+
     @Test
     void 회원가입() {
         // given
